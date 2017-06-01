@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.group text {
+	font: 11px sans-serif;
+	pointer-events: none;
+}
+
+.group path {
+	stroke: #000;
+}
+
+path.chord {
+  stroke-width: .75;
+  fill-opacity: .75;
+}
+
+body{
+	margin:0;
+}
+
+#nav {
+	background-color: #000000; 
+	height: 40px; 
+	padding-left: 15%;	
+	padding-right: 15%;
+	font-size: 200%;
+	color: #ffffff;
+}
+
+#entete {
+	background-color: #e6e6e6; 
+	height: 160px; 
+	padding-left: 15%;	
+	padding-right: 15%; 
+	padding-top: 10px;
+}
+
+#contain {
+	padding-left: 15%;	
+	padding-right: 15%;
+}
+#author {
+	font-size:11pt;
+}
+
+#footer {
+	padding-left: 15%;	
+	padding-right: 15%;
+}
+
+.svgGraph {
+	padding-left: 15%;	
+	padding-right: 15%;
+}
+table {
+    border-collapse: collapse;
+	padding-right: 15%;
+	display: inline-block;
+}
+
+th, td {
+	width: 150px; 
+	text-align: left;
+	border: 1px solid black;
+}
+
+.container { border:2px solid #ccc; width:300px; height: 100px; overflow-y: scroll; }
+
+</style>
+<body>
+	<div id="nav">Project t-SoftwEng - Interaction during a project</div>
+	<div id="entete"><h2>Parameters Chord Diagram</h2> Enter the project in the edit box. For example : reactide/reactide. If you have lots of commits, you must wait a moment. Choose the interval of commits (days). <br />
+	You can download two files, all commits generate for this project and the analysis of this commit for the Chord Diagram<br /><br /><div id="author">&copy; Favre, Pasquier, Pfeiffer, van Dooren </div></div>
+	<div id="contain">
+		<h3>Project GitHub</h3>
+		<div style="border:collapse">
+		<form action="index.html">
+			<input type="text"  onClick="this.select();" value="reactide/reactide" id="repoGit" autofocus></input>
+			
+			<select id="days">
+			  <option value="1" selected>1</option> 
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5</option>
+			  <option value="6">6</option>
+			  <option value="7">7</option>
+			  <option value="8">8</option>
+			  <option value="9">9</option>
+			  <option value="10">10</option>
+			</select>
+			days
+			
+			<div class="container" id="listCommiter">
+			</div>
+			
+			
+			<input type="button" value="Valider" id="submit"></input><br/><br/>
+		</form>
+			<img src="img/wait.gif" alt="Mountain View" style="width:150px;height:125px;display: none;" id="wait">
+		</div>
+		<div id="download">
+			CSV files : 
+			<a href="commits.csv" download>All commits</a>
+			<a href="test.csv" download>Commit analysis</a>
+		</div>
+		<div id="svg"></div>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="//d3js.org/d3.v3.min.js"></script>
+		<table id="tableCommits" align="right"></table>
+	</div>
+	<script>
+		var socket = io.connect("http://localhost:49160")
+		var lastProject = '';
+		window.onload = document.getElementById('repoGit').select();
+		$('.svgGraph').hide()
+		$('#download').hide()
+		$("#repoGit").keyup(function(event){
+			if(event.keyCode == 13){
+				$("#submit").click();
+			}
+		});
+		var commiters = []
+		$('#submit').click(function () {
+			document.getElementById("tableCommits").innerHTML = '';
+			$('.svgGraph').hide()
+			$('#download').hide()
+			$('#wait').show()
+			commiters = []
+			if ($('#repoGit').val() == lastProject) {
+				$("input[name=checkCommiters]:checked").map(
+				function () {commiters.push($(this).attr('value'));})
+				createSvg();
+/*				$('#wait').hide();
+				loadDataCSV();
+				$('.svgGraph').show()
+*/
+			}
+			socket.emit('message', $('#repoGit').val() + ";" + $("#days").val());
+        })
+		
+		var width = 480,
+			height = 500,
+			outerRadius = Math.min(width, height) / 2 - 4,
+			innerRadius = outerRadius - 20;
+
+		// Square matrices, asynchronously loaded; credits is the transpose of debits.
+		var debits = [],
+			credits = [];
+		var layout, fill, arc, chord, svg;
+		
+		function commiterChecked(commi) {
+			for (i in commiters) {
+				if (commiters[i] == commi) {return true;}
+			}
+			return false;
+		}
+		
+		function createSvg() {
+			debits = []
+			credits = []
+			d3.select("svg").remove();	
+			$( ".svgGraph" ).remove();
+			// The chord layout, for computing the angles of chords and groups.
+			layout = d3.layout.chord()
+				.sortGroups(d3.descending)
+				.sortSubgroups(d3.descending)
+				.sortChords(d3.descending)
+				.padding(.04);
+
+			// The color scale, for different categories of “worrisome” color.
+			fill = d3.scale.ordinal()
+				.domain([0, 1, 2,3,4,5,6,7])
+				.range(["#A9A9A9","#8FBC8F","##D3D3D3","#778899","#87CEFA","#C71585","#DB7093","#B0E0E6"]);
+				//.range(["#FF0000","#00FF00","#0000FF","#00FFFF","#FF00FF","#FFFF00","#777777","#FFF000"]);
+
+			// The arc generator, for the groups.
+			arc = d3.svg.arc()
+				.innerRadius(innerRadius)
+				.outerRadius(outerRadius);
+
+			// The chord generator (quadratic Bézier), for the chords.
+			chord = d3.svg.chord()
+				.radius(innerRadius);
+
+			// Add an SVG element for each diagram, and translate the origin to the center.
+			svg = d3.select("body").selectAll("#svg")
+				.data([debits, credits])
+			  .enter().append("div")
+				.attr("class", "svgGraph")
+				//.style("display", "inline-block")
+				.style("align", "left")
+				.style("width", width + "px")
+				.style("height", height + "px")
+			  .append("svg")
+				.attr("width", width)
+				.attr("height", height)
+			  .append("g")
+				.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+		}
+		function mouseover(d) {
+			console.log(d)
+		}
+		var dict = {};
+
+		socket.on('message', function(message) {
+			
+			createSvg();
+			$('#wait').hide();
+			loadDataCSV();
+			$('.svgGraph').show()
+		})
+		
+		function loadDataCSV() {
+			
+			d3.csv("test.csv", type, function(error, data) {
+			  
+			  var table = '<tr><th>Username</th><th># interactions</th></tr>';
+			  if (error) throw error;
+
+			  var contributorByName = d3.map(),
+				  contributorIndex = -1,
+				  contributorByIndex = [];
+			  // Compute a unique index for each contributor.
+			  var k = 0;
+			  data.forEach(function(d) {
+				if (commiterChecked(d.Commiter1) || commiters.length == 0) {
+					if (contributorByName.has(d.Commiter1)) d.Commiter1 = contributorByName.get(d.Commiter1);
+					else contributorByName.set(d.Commiter1, d.Commiter1 = {name: d.Commiter1, index: ++contributorIndex});
+				}
+				
+				if (commiterChecked(d.Commiter2) || commiters.length == 0) {
+					if (contributorByName.has(d.Commiter2)) d.Commiter2 = contributorByName.get(d.Commiter2);
+					else contributorByName.set(d.Commiter2, d.Commiter2 = {name: d.Commiter2, index: ++contributorIndex});
+					if (!dict[d.Commiter2]) {k++; dict[d.Commiter2.name] = k % 8;}
+					d.Commiter2.color = dict[d.Commiter2.name];
+				}
+				
+			  });
+			  // Initialize a square matrix of debits and credits.
+			  for (var i = 0; i <= contributorIndex; i++) {
+				debits[i] = [];
+				credits[i] = [];
+				for (var j = 0; j <= contributorIndex; j++) {
+				  debits[i][j] = 0;
+				  credits[i][j] = 0;
+				}
+			  }
+			  //Donnée tableau
+			  var tableData = {};
+			  // Populate the matrices, and stash a map from index to contributor.
+			  data.forEach(function(d) {
+				if ((commiterChecked(d.Commiter1.name) && commiterChecked(d.Commiter2.name)) || commiters.length == 0) {
+					debits[d.Commiter1.index][d.Commiter2.index] = d;
+					credits[d.Commiter2.index][d.Commiter1.index] = d;
+					if(!tableData[d.Commiter1.index]) {tableData[d.Commiter1.index]= d }
+					else {tableData[d.Commiter1.index] += d}
+					contributorByIndex[d.Commiter1.index] = d.Commiter1;
+					contributorByIndex[d.Commiter2.index] = d.Commiter2;
+				}
+			  });
+			  
+			  var i = 0;
+			  svg.each(function(matrix, j) {
+				if (i == 0) {
+					var svg = d3.select(this);
+
+					// Compute the chord layout.
+					layout.matrix(matrix);
+					
+
+					// Add chords.
+					svg.selectAll(".chord")
+						//.filter(function(d) { (commiterChecked(d.Commiter1) && commiterChecked(d.Commiter2)) || commiters.length == 0 })
+						.data(layout.chords)
+					  .enter().append("path")
+						.filter(function(d) {
+							//console.log(d);
+							if (d.source.value != null) {
+								return ((commiterChecked(d.source.value.Commiter1.name) && commiterChecked(d.source.value.Commiter2.name)) || commiters.length == 0); 
+							} else {return false}
+						})
+						.attr("class", "chord")
+						.style("fill", function(d) { return fill(d.source.value.color); })
+						.style("stroke", function(d) { return d3.rgb(fill(d.source.value.color)).darker(); })
+						.attr("d", chord)
+					  .append("title")
+						.text(function(d) {return d.source.value.Commiter2.name + " and " + d.source.value.Commiter1.name + " makes " + (d.source.value) + " commits in the same file"; });
+						
+
+					// Add groups.
+					var g = svg.selectAll(".group")
+						.data(layout.groups)
+					  .enter().append("g")
+						.attr("class", "group");
+					
+					// Add the group arc.
+					g.append("path")
+						//Color title
+						.filter(function(d) {
+							//console.log(contributorByIndex[d.index].name)
+							//return true;
+							//console.log(d);
+							//if (d.source.value != null)
+							return ((commiterChecked(contributorByIndex[d.index].name))|| commiters.length == 0 )
+						})
+						.style("fill", function(d) { return fill(contributorByIndex[d.index].color); })
+						.on("mouseover",  function(d) {return fill(3); })
+						.attr("id", function(d, i) { return "group" + d.index + "-" + j; })
+						.attr("d", arc)
+						//.on("mouseover",  function(d) { console.log(d); return fill(3); })
+					  .append("title")
+						.text(function(d) { return contributorByIndex[d.index].name + " " + (j ? "mades" : "mades") + " " + (d.value) + " commits in shared files."; });
+						
+
+					// Add the group label (but only for large groups, where it will fit).
+					// An alternative labeling mechanism would be nice for the small groups.
+					g.append("text")
+						.attr("x", 6)
+						.attr("dy", 15)
+						.filter(function(d) {console.log(d); return d.value > 20; })
+					  .append("textPath")
+						.attr("xlink:href", function(d) { return "#group" + d.index + "-" + j; })
+						.text(function(d) {return contributorByIndex[d.index].name; });
+					
+					
+				}
+					i++;
+			  });;
+			  
+			  if ($('#repoGit').val() != lastProject) {
+				document.getElementById("listCommiter").innerHTML = "";
+				lastProject = $('#repoGit').val()
+				for(key in tableData){
+					document.getElementById("listCommiter").innerHTML += "<label><input type='checkbox' name='checkCommiters' checked value='"+contributorByIndex[key].name+"'/> "+contributorByIndex[key].name+" </label><br />"
+				 }
+			  }
+			  for(key in tableData){
+				var value = tableData[key];
+				table += "<tr><td>"+contributorByIndex[key].name+"</td><td>"+value+"</td></tr>";
+			  }
+			  
+			  $('#download').show()
+			  document.getElementById("tableCommits").innerHTML = table;
+			  
+			});
+		}
+		
+		function type(d) {
+		  d.commits = +d.commits;
+		  d.color = +d.color;
+		  d.valueOf = value; // for chord layout
+		  return d;
+		}
+		
+		
+		function value() {
+		  return this.commits;
+		}
+
+	</script>
+	
+	<!---->
+</body>

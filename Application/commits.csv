@@ -1,0 +1,359 @@
+idCommit,name,date,message,nfiles,changes
+1,Brian Nydegger,2017-05-27T19:48:09Z,utilisation des détails. Permet de les afficher. Surligne les accords recherchés,interface/index.html,62
+2,Brian Nydegger,2017-05-27T18:26:49Z,gestion des slash dans la recherche,interface/index.html,2
+2,Brian Nydegger,2017-05-27T18:26:49Z,gestion des slash dans la recherche,interface/youtube/restApi.py,1
+3,Brian Nydegger,2017-05-27T18:15:03Z,ajout de la lecture de la séquence d accords,interface/index.html,87
+4,Brian Nydegger,2017-05-27T18:15:03Z,execution de la recherche et des resultats,interface/index.html,49
+5,Brian Nydegger,2017-05-27T18:15:03Z,ajout de la route qui execute le .jar,interface/youtube/restApi.py,3
+6,gerome12,2017-05-22T06:41:21Z,commentaires,interface/youtube/restApi.py,8
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/A.txt,1
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/B.txt,7
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/C.txt,5
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/D.txt,1
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/F.txt,1
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/G.txt,2
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/J.txt,3
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/L.txt,4
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/M.txt,3
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/N.txt,1
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/P.txt,3
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/S.txt,2
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/T.txt,1
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/Lettre parsee/newSong.txt,34
+7,gerome12,2017-05-20T11:45:16Z,script de MàJ des données du site BaC,parsing/updateData.py,95
+9,gerome12,2017-05-19T13:26:14Z,getInfo ajout code d'erreur,interface/youtube/restApi.py,34
+10,gerome12,2017-05-19T13:12:07Z,api rest route getInforoute retourne url youtuber et les paroles + les accords,interface/youtube/restApi.py,29
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/artifacts/Indexer_jar.xml,13
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/compiler.xml,23
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/description.html,1
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/encodings.xml,5
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/kotlinc.xml,7
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/misc.xml,12
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/modules.xml,8
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/uiDesigner.xml,124
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/vcs.xml,6
+11,ludo,2017-05-19T13:06:20Z,Remove intellij .idea folder,Indexer/.idea/workspace.xml,1158
+12,ludo,2017-05-19T13:02:56Z,Code clarification,Indexer/.idea/workspace.xml,63
+12,ludo,2017-05-19T13:02:56Z,Code clarification,Indexer/src/utilities/AccordFilter.java,1
+13,ludo,2017-05-19T12:17:36Z,Jar creation,Indexer/.idea/artifacts/Indexer_jar.xml,13
+13,ludo,2017-05-19T12:17:36Z,Jar creation,Indexer/.idea/workspace.xml,34
+13,ludo,2017-05-19T12:17:36Z,Jar creation,Indexer/out/Indexer.jar,0
+13,ludo,2017-05-19T12:17:36Z,Jar creation,Indexer/out/production/Indexer/Indexing.class,0
+13,ludo,2017-05-19T12:17:36Z,Jar creation,Indexer/out/production/Indexer/META-INF/MANIFEST.MF,3
+13,ludo,2017-05-19T12:17:36Z,Jar creation,Indexer/src/Indexing.java,8
+13,ludo,2017-05-19T12:17:36Z,Jar creation,Indexer/src/META-INF/MANIFEST.MF,3
+14,gerome12,2017-05-18T09:37:33Z,ajout balise <pre>,interface/youtube/restApi.py,9
+15,ludo,2017-05-17T07:35:20Z,Adding interface support,Indexer/.idea/vcs.xml,5
+15,ludo,2017-05-17T07:35:20Z,Adding interface support,Indexer/.idea/workspace.xml,209
+15,ludo,2017-05-17T07:35:20Z,Adding interface support,Indexer/out/production/Indexer/Indexing.class,0
+15,ludo,2017-05-17T07:35:20Z,Adding interface support,Indexer/out/production/Indexer/utilities/ReadFiles.class,0
+15,ludo,2017-05-17T07:35:20Z,Adding interface support,Indexer/src/Indexing.java,16
+15,ludo,2017-05-17T07:35:20Z,Adding interface support,Indexer/src/utilities/ReadFiles.java,16
+16,Brian Nydegger,2017-05-16T12:45:19Z,feat: ajout du playage de sonen utilisant la lib http://www.keithwhor.com/music/complet,interface/index.html,235
+16,Brian Nydegger,2017-05-16T12:45:19Z,feat: ajout du playage de sonen utilisant la lib http://www.keithwhor.com/music/complet,interface/keithwhor-audiosynth-2e26f29/LICENSE,20
+16,Brian Nydegger,2017-05-16T12:45:19Z,feat: ajout du playage de sonen utilisant la lib http://www.keithwhor.com/music/complet,interface/keithwhor-audiosynth-2e26f29/README.md,206
+16,Brian Nydegger,2017-05-16T12:45:19Z,feat: ajout du playage de sonen utilisant la lib http://www.keithwhor.com/music/complet,interface/keithwhor-audiosynth-2e26f29/audiosynth.js,350
+17,Brian Nydegger,2017-05-15T15:13:21Z,avancement. ajout d'autre options. Bouton permettant de cacher / afficher la recherche,interface/index.html,71
+18,Brian Nydegger,2017-05-15T15:13:21Z,ajout Nydegger dans catégorie Data (accords et tout ça tout ça),README.md,2
+19,Hoopaa,2017-05-13T14:53:31Z,Modification for interface,README.md,6
+20,Hoopaa,2017-05-13T14:52:53Z,Modification for interface,Indexer/.idea/workspace.xml,105
+20,Hoopaa,2017-05-13T14:52:53Z,Modification for interface,Indexer/out/production/Indexer/Indexing.class,0
+20,Hoopaa,2017-05-13T14:52:53Z,Modification for interface,Indexer/src/Indexing.java,35
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/.gitignore,1
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/.idea/workspace.xml,296
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_g.fdt,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_g.fdx,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_g.fnm,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_g.si,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_g_Lucene50_0.doc,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_g_Lucene50_0.tim,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_g_Lucene50_0.tip,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_h.fdt,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_h.fdx,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_h.fnm,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_h.si,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_h_Lucene50_0.doc,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_h_Lucene50_0.tim,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_h_Lucene50_0.tip,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_i.fdt,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_i.fdx,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_i.fnm,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_i.si,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_i_Lucene50_0.doc,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_i_Lucene50_0.tim,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_i_Lucene50_0.tip,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_j.fdt,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_j.fdx,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_j.fnm,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_j.si,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_j_Lucene50_0.doc,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_j_Lucene50_0.tim,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_j_Lucene50_0.tip,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_k.fdt,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_k.fdx,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_k.fnm,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_k.si,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_k_Lucene50_0.doc,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_k_Lucene50_0.tim,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_k_Lucene50_0.tip,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_l.fdt,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_l.fdx,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_l.fnm,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_l.si,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_l_Lucene50_0.doc,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_l_Lucene50_0.tim,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_l_Lucene50_0.tip,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_m.fdt,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_m.fdx,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_m.fnm,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_m.si,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_m_Lucene50_0.doc,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_m_Lucene50_0.tim,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_m_Lucene50_0.tip,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_n.fdt,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_n.fdx,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_n.fnm,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_n.si,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_n_Lucene50_0.doc,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_n_Lucene50_0.tim,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/_n_Lucene50_0.tip,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/segments_9,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/index_standard/write.lock,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/out/production/Indexer/Indexing.class,0
+22,Hoopaa,2017-05-13T12:52:07Z,"Retrieving working, need modifications for interface",Indexer/src/Indexing.java,73
+23,ludo,2017-05-12T15:18:46Z,Hmm,.gitignore,1
+23,ludo,2017-05-12T15:18:46Z,Hmm,interface/youtube/restApi.py,2
+24,ludo,2017-05-12T15:16:39Z,Indexing done,.dropbox,1
+24,ludo,2017-05-12T15:16:39Z,Indexing done,.gitignore,1
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/.idea/workspace.xml,160
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_2.fdt,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_2.fdx,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_g.fdt,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_g.fdx,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_g.fnm,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_g.si,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_g_Lucene50_0.doc,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_g_Lucene50_0.tim,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_g_Lucene50_0.tip,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_h.fdt,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_h.fdx,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_h.fnm,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_h.si,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_h_Lucene50_0.doc,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_h_Lucene50_0.tim,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_h_Lucene50_0.tip,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_i.fdt,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_i.fdx,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_i.fnm,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_i.si,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_i_Lucene50_0.doc,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_i_Lucene50_0.tim,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_i_Lucene50_0.tip,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_j.fdt,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_j.fdx,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_j.fnm,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_j.si,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_j_Lucene50_0.doc,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_j_Lucene50_0.tim,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_j_Lucene50_0.tip,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_k.fdt,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_k.fdx,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_k.fnm,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_k.si,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_k_Lucene50_0.doc,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_k_Lucene50_0.tim,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_k_Lucene50_0.tip,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_l.fdt,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_l.fdx,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_l.fnm,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_l.si,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_l_Lucene50_0.doc,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_l_Lucene50_0.tim,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_l_Lucene50_0.tip,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_m.fdt,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_m.fdx,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_m.fnm,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_m.si,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_m_Lucene50_0.doc,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_m_Lucene50_0.tim,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_m_Lucene50_0.tip,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_n.fdt,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_n.fdx,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_n.fnm,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_n.si,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_n_Lucene50_0.doc,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_n_Lucene50_0.tim,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/_n_Lucene50_0.tip,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/index_standard/segments_9,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/out/production/Indexer/Indexing.class,0
+24,ludo,2017-05-12T15:16:39Z,Indexing done,Indexer/src/Indexing.java,42
+24,ludo,2017-05-12T15:16:39Z,Indexing done,desktop.ini,4
+26,gerome12,2017-05-12T14:15:27Z,add gitignore,.gitignore,1
+27,gerome12,2017-05-12T14:11:03Z,"API ""debug""",interface/youtube/restApi.py,2
+28,gerome12,2017-05-12T14:07:03Z,"API ""debug""",interface/youtube/restApi.py,2
+29,gerome12,2017-05-12T14:03:59Z,API,interface/youtube/restApi.py,2
+30,gerome12,2017-05-12T13:59:38Z,API,.dropbox,1
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/.idea/workspace.xml,47
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/index_standard/_2.fdt,0
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/index_standard/_2.fdx,0
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/index_standard/write.lock,0
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/out/production/Indexer/Indexing.class,0
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/out/production/Indexer/utilities/AccordAnalyzer.class,0
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/out/production/Indexer/utilities/AccordFilter.class,0
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/src/Indexing.java,35
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/src/utilities/AccordAnalyzer.java,3
+30,gerome12,2017-05-12T13:59:38Z,API,Indexer/src/utilities/AccordFilter.java,34
+30,gerome12,2017-05-12T13:59:38Z,API,README.md,5
+30,gerome12,2017-05-12T13:59:38Z,API,desktop.ini,4
+30,gerome12,2017-05-12T13:59:38Z,API,interface/index.html,233
+31,gerome12,2017-05-12T13:29:52Z,début de l'api rest,README.md,1
+31,gerome12,2017-05-12T13:29:52Z,début de l'api rest,interface/youtube/restApi.py,90
+32,ludo,2017-05-12T13:29:05Z,Trying to indexize the tokens,Indexer/.idea/workspace.xml,32
+32,ludo,2017-05-12T13:29:05Z,Trying to indexize the tokens,Indexer/index_standard/_2.fdt,0
+32,ludo,2017-05-12T13:29:05Z,Trying to indexize the tokens,Indexer/index_standard/_2.fdx,0
+32,ludo,2017-05-12T13:29:05Z,Trying to indexize the tokens,Indexer/out/production/Indexer/Indexing.class,0
+32,ludo,2017-05-12T13:29:05Z,Trying to indexize the tokens,Indexer/src/Indexing.java,13
+32,ludo,2017-05-12T13:29:05Z,Trying to indexize the tokens,Indexer/src/utilities/AccordAnalyzer.java,2
+33,Brian Nydegger,2017-05-12T13:20:11Z,première version de l'interface webBootstrap & JQuery,interface/index.html,233
+34,ludo,2017-05-12T13:03:24Z,Clean tokenizer,Indexer/.idea/workspace.xml,49
+34,ludo,2017-05-12T13:03:24Z,Clean tokenizer,Indexer/index_standard/write.lock,0
+34,ludo,2017-05-12T13:03:24Z,Clean tokenizer,Indexer/out/production/Indexer/Indexing.class,0
+34,ludo,2017-05-12T13:03:24Z,Clean tokenizer,Indexer/out/production/Indexer/utilities/AccordAnalyzer.class,0
+34,ludo,2017-05-12T13:03:24Z,Clean tokenizer,Indexer/out/production/Indexer/utilities/AccordFilter.class,0
+34,ludo,2017-05-12T13:03:24Z,Clean tokenizer,Indexer/src/Indexing.java,24
+34,ludo,2017-05-12T13:03:24Z,Clean tokenizer,Indexer/src/utilities/AccordAnalyzer.java,1
+34,ludo,2017-05-12T13:03:24Z,Clean tokenizer,Indexer/src/utilities/AccordFilter.java,34
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/.idea/workspace.xml,293
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/Indexer.iml,3
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/libraries/commons-lang3-3.5.jar,0
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/libraries/lucene-analyzers-common-6.5.1.jar,0
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/libraries/lucene-core-6.5.1.jar,0
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/libraries/lucene-misc-6.5.1.jar,0
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/libraries/lucene-queryparser-6.5.1.jar,0
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/out/production/Indexer/Indexing.class,0
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/out/production/Indexer/utilities/AccordAnalyzer.class,0
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/out/production/Indexer/utilities/ReadFiles.class,0
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/out/production/Indexer/utilities/Song.class,0
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/src/Indexing.java,26
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/src/utilities/AccordAnalyzer.java,24
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/src/utilities/ReadFiles.java,22
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,Indexer/src/utilities/Song.java,38
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,parsing/Lettre parsee/all.txt,14580
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,parsing/README.md,7
+36,gerome12,2017-05-12T12:06:28Z,Merge branch 'master' of https://github.com/Hoopaa/accord_project,parsing/concatFile.py,0
+37,Brian Nydegger,2017-05-12T12:03:56Z,"ajout de la tache ""interface""",README.md,81
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/.idea/workspace.xml,175
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/libraries/commons-lang3-3.5.jar,0
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/out/production/Indexer/Indexing.class,0
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/out/production/Indexer/utilities/AccordAnalyzer.class,0
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/out/production/Indexer/utilities/AccordsFilter.class,0
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/out/production/Indexer/utilities/AccordsTokenizer.class,0
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/out/production/Indexer/utilities/NGramAnalyzer.class,0
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/src/Indexing.java,27
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/src/utilities/AccordAnalyzer.java,7
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/src/utilities/AccordsFilter.java,35
+38,ludo,2017-05-12T11:57:57Z,Tokenization working really good,Indexer/src/utilities/AccordsTokenizer.java,18
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/.idea/workspace.xml,252
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/out/production/Indexer/Indexing.class,0
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/out/production/Indexer/utilities/AccordsFilter.class,0
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/out/production/Indexer/utilities/AccordsTokenizer.class,0
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/out/production/Indexer/utilities/NGramAnalyzer.class,0
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/out/production/Indexer/utilities/Song.class,0
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/src/Indexing.java,31
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/src/utilities/AccordsFilter.java,35
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/src/utilities/AccordsTokenizer.java,18
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/src/utilities/NGramAnalyzer.java,25
+39,ludo,2017-05-12T10:34:23Z,indexer tokenization corrections,Indexer/src/utilities/Song.java,7
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/.idea/workspace.xml,124
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/Indexer.iml,3
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/libraries/lucene-analyzers-common-6.5.1.jar,0
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/libraries/lucene-core-6.5.1.jar,0
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/libraries/lucene-misc-6.5.1.jar,0
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/libraries/lucene-queryparser-6.5.1.jar,0
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/out/production/Indexer/Indexing.class,0
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/out/production/Indexer/utilities/ReadFiles.class,0
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/out/production/Indexer/utilities/Song.class,0
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/src/Indexing.java,26
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/src/utilities/ReadFiles.java,18
+40,Hoopaa,2017-05-11T15:43:40Z,Problems with the indexer,Indexer/src/utilities/Song.java,9
+41,Hoopaa,2017-05-11T14:27:08Z,"All songs treated correctly, indexer is on his way",Indexer/.idea/workspace.xml,208
+41,Hoopaa,2017-05-11T14:27:08Z,"All songs treated correctly, indexer is on his way",Indexer/out/production/Indexer/utilities/ReadFiles.class,0
+41,Hoopaa,2017-05-11T14:27:08Z,"All songs treated correctly, indexer is on his way",Indexer/out/production/Indexer/utilities/Song.class,0
+41,Hoopaa,2017-05-11T14:27:08Z,"All songs treated correctly, indexer is on his way",Indexer/src/utilities/ReadFiles.java,10
+41,Hoopaa,2017-05-11T14:27:08Z,"All songs treated correctly, indexer is on his way",Indexer/src/utilities/Song.java,42
+41,Hoopaa,2017-05-11T14:27:08Z,"All songs treated correctly, indexer is on his way",parsing/Lettre parsee/all.txt,14580
+41,Hoopaa,2017-05-11T14:27:08Z,"All songs treated correctly, indexer is on his way",parsing/concatFile.py,0
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/.idea/compiler.xml,23
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/.idea/description.html,1
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/.idea/encodings.xml,5
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/.idea/kotlinc.xml,7
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/.idea/misc.xml,12
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/.idea/modules.xml,8
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/.idea/uiDesigner.xml,124
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/.idea/vcs.xml,7
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/.idea/workspace.xml,763
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/Indexer.iml,20
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/out/production/Indexer/Indexing.class,0
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/out/production/Indexer/utilities/ReadFiles.class,0
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/src/Indexing.java,11
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",Indexer/src/utilities/ReadFiles.java,44
+43,ludo,2017-05-10T10:08:03Z,"Creating indexer, read parsed files (for now)",parsing/README.md,10
+44,gerome12,2017-05-07T12:04:38Z,.,parsing/README.md,11
+45,gerome12,2017-05-07T12:03:57Z,.,parsing/bdd.py,26
+45,gerome12,2017-05-07T12:03:57Z,.,parsing/getPartition.py,183
+45,gerome12,2017-05-07T12:03:57Z,.,parsing/getPartitionV2.py,142
+50,gerome12,2017-05-06T22:09:41Z,.,interface/youtube/getYoutubeUrl.py,11
+50,gerome12,2017-05-06T22:09:41Z,.,parsing/getPartitionV2.py,3
+51,gerome12,2017-05-06T21:39:19Z,youtubescript python permettant d'obtenir l'url d'une video youtube depuisl'url d'une chanson de boite à chanson,interface/youtube/getYoutubeUrl.py,42
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/S.txt,1131
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/T.txt,508
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/U.txt,26
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/V.txt,381
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/W.txt,126
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/X.txt,6
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/Y.txt,80
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/Z.txt,81
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/all.txt,14580
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/Lettre parsee/concatFile.py,3
+52,gerome12,2017-05-06T21:39:19Z,fin du parsing de A à Z,parsing/getPartitionV2.py,2
+53,gerome12,2017-05-06T21:39:18Z,.,parsing/Lettre parsee/M.txt,1251
+53,gerome12,2017-05-06T21:39:18Z,.,parsing/Lettre parsee/N.txt,350
+53,gerome12,2017-05-06T21:39:18Z,.,parsing/Lettre parsee/O.txt,219
+53,gerome12,2017-05-06T21:39:18Z,.,parsing/Lettre parsee/P.txt,929
+53,gerome12,2017-05-06T21:39:18Z,.,parsing/Lettre parsee/Q.txt,40
+53,gerome12,2017-05-06T21:39:18Z,.,parsing/Lettre parsee/R.txt,757
+54,gerome12,2017-05-06T21:39:18Z,.,parsing/Lettre parsee/concatFile.py,14
+57,gerome12,2017-05-06T16:25:13Z,.,parsing/C.txt,315
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/C.txt,1567
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/D.txt,1016
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/E.txt,195
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/F.txt,883
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/G.txt,605
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/H.txt,337
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/I.txt,105
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/J.txt,346
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/K.txt,342
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/Lettre parsee/L.txt,908
+58,gerome12,2017-05-06T16:24:56Z,try except sur les requete,parsing/getPartitionV2.py,8
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/9.txt,54
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/A.txt,804
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/B.txt,1331
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/C.txt,315
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/Lettre parsee/9.txt,54
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/Lettre parsee/A.txt,688
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/Lettre parsee/B.txt,1649
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/Lettre parsee/concatFile.py,0
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/all.txt,2189
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/getPartitionV2.py,47
+60,gerome12,2017-05-06T11:55:32Z,parsingamélioration du parsing,parsing/photo5776416849603438723.jpg,0
+70,Brian Nydegger,2017-05-04T15:41:13Z,proposition d'un planning,README.md,27
+71,ludo,2017-05-04T14:26:02Z,readme changes,README.md,7
+73,ludo,2017-05-04T12:51:01Z,first commit,parsing/9.txt,54
+73,ludo,2017-05-04T12:51:01Z,first commit,parsing/A.txt,804
+73,ludo,2017-05-04T12:51:01Z,first commit,parsing/B.txt,1331
+73,ludo,2017-05-04T12:51:01Z,first commit,parsing/Partitions - If it Means a Lot to You - A Day to Remember (Accords et paroles ♫).url,2
+73,ludo,2017-05-04T12:51:01Z,first commit,parsing/all.txt,2189
+73,ludo,2017-05-04T12:51:01Z,first commit,parsing/bdd.py,26
+73,ludo,2017-05-04T12:51:01Z,first commit,parsing/concatfile.py,15
+73,ludo,2017-05-04T12:51:01Z,first commit,parsing/getPartition.py,179
+73,ludo,2017-05-04T12:51:01Z,first commit,parsing/getPartitionV2.py,126

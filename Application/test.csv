@@ -1,0 +1,65 @@
+Commiter1,Commiter2,commits,color
+Anton Kuznetsov,Anton Kuznetsov,0,1
+Anton Kuznetsov,Serdar Sever znk,0,1
+Anton Kuznetsov,Mark Marcelo,0,1
+Anton Kuznetsov,Bita Djaghouri,0,1
+Anton Kuznetsov,Admin,0,1
+Anton Kuznetsov,hit1st,0,1
+Anton Kuznetsov,Jiri Spac,0,1
+Anton Kuznetsov,Jin Choi,2,1
+Serdar Sever znk,Anton Kuznetsov,0,2
+Serdar Sever znk,Serdar Sever znk,0,2
+Serdar Sever znk,Mark Marcelo,0,2
+Serdar Sever znk,Bita Djaghouri,6,2
+Serdar Sever znk,Admin,2,2
+Serdar Sever znk,hit1st,0,2
+Serdar Sever znk,Jiri Spac,2,2
+Serdar Sever znk,Jin Choi,8,2
+Mark Marcelo,Anton Kuznetsov,0,3
+Mark Marcelo,Serdar Sever znk,0,3
+Mark Marcelo,Mark Marcelo,0,3
+Mark Marcelo,Bita Djaghouri,3596,3
+Mark Marcelo,Admin,1262,3
+Mark Marcelo,hit1st,0,3
+Mark Marcelo,Jiri Spac,0,3
+Mark Marcelo,Jin Choi,1226,3
+Bita Djaghouri,Anton Kuznetsov,0,4
+Bita Djaghouri,Serdar Sever znk,6,4
+Bita Djaghouri,Mark Marcelo,3596,4
+Bita Djaghouri,Bita Djaghouri,0,4
+Bita Djaghouri,Admin,2446,4
+Bita Djaghouri,hit1st,2,4
+Bita Djaghouri,Jiri Spac,9,4
+Bita Djaghouri,Jin Choi,2068,4
+Admin,Anton Kuznetsov,0,5
+Admin,Serdar Sever znk,2,5
+Admin,Mark Marcelo,1262,5
+Admin,Bita Djaghouri,2446,5
+Admin,Admin,0,5
+Admin,hit1st,0,5
+Admin,Jiri Spac,1,5
+Admin,Jin Choi,1704,5
+hit1st,Anton Kuznetsov,0,6
+hit1st,Serdar Sever znk,0,6
+hit1st,Mark Marcelo,0,6
+hit1st,Bita Djaghouri,2,6
+hit1st,Admin,0,6
+hit1st,hit1st,0,6
+hit1st,Jiri Spac,0,6
+hit1st,Jin Choi,1,6
+Jiri Spac,Anton Kuznetsov,0,7
+Jiri Spac,Serdar Sever znk,2,7
+Jiri Spac,Mark Marcelo,0,7
+Jiri Spac,Bita Djaghouri,9,7
+Jiri Spac,Admin,1,7
+Jiri Spac,hit1st,0,7
+Jiri Spac,Jiri Spac,0,7
+Jiri Spac,Jin Choi,8,7
+Jin Choi,Anton Kuznetsov,2,8
+Jin Choi,Serdar Sever znk,8,8
+Jin Choi,Mark Marcelo,1226,8
+Jin Choi,Bita Djaghouri,2068,8
+Jin Choi,Admin,1704,8
+Jin Choi,hit1st,1,8
+Jin Choi,Jiri Spac,8,8
+Jin Choi,Jin Choi,0,8

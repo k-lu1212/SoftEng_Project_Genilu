@@ -1,0 +1,13 @@
+{
+  "name": "Github_interaction_viewer",
+  "version": "1.0.0",
+  "description": "Node.js app on Docker",
+  "author": "Groupe Favre Pasquier Pfeiffer Van Dooren",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
